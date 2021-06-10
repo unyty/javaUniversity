@@ -10,33 +10,20 @@
  */
 public class HolaMundo {
     public static void main(String[] args) {
-        //definir variable
-        int miVariableEntera=10;
-        System.out.println(miVariableEntera);
-        //modificar variable
-        miVariableEntera=5;
-        System.out.println(miVariableEntera);
+        var usuario = "juan";
+        var titulo = "ingeniero";
+        var union = titulo + " " + usuario;
+        System.out.println("union = " + union);
         
-        String miVariableCadena="variable string";
+        var i = 3;
+        var j = 4;
         
-        System.out.println(miVariableCadena);
+        System.out.println(i+j);//suma numeros
         
-        miVariableCadena="chao";
-        System.out.println(miVariableCadena);
+        System.out.println(i+j+usuario); //primero suma y luego cadena
+        System.out.println(usuario+i+j); //manejo de todo como cadena
+        System.out.println(usuario+(i+j)); //primero suma luego concatenacion 
         
-        //inferencia de variable
-        var miVariableEntera2 =10;
-        System.out.println(miVariableEntera2);
         
-        var miVariableCadena2 = "raro inferencia ...";
-        System.out.println(miVariableCadena2);
-        
-        System.out.println("miVariableCadena2 = " + miVariableCadena2);
-        
-        //declaraciones raras de variables
-        var miVariable =1;
-        var _miVariable=2;
-        var $miVariable=3; //WTF
-        //var miVariáble=4; //jamas hacer esto pero se puede
     }
 }
