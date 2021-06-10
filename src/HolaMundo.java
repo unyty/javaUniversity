@@ -10,20 +10,13 @@
  */
 public class HolaMundo {
     public static void main(String[] args) {
-        var usuario = "juan";
-        var titulo = "ingeniero";
-        var union = titulo + " " + usuario;
-        System.out.println("union = " + union);
+        var nombre = "poncho";
         
-        var i = 3;
-        var j = 4;
-        
-        System.out.println(i+j);//suma numeros
-        
-        System.out.println(i+j+usuario); //primero suma y luego cadena
-        System.out.println(usuario+i+j); //manejo de todo como cadena
-        System.out.println(usuario+(i+j)); //primero suma luego concatenacion 
-        
+        System.out.println("nueva linea: \n"+nombre);
+        System.out.println("tabulador: \t"+nombre);
+        System.out.println("retroceso: \b"+nombre);
+        System.out.println("comilla simple: \'"+nombre+"\'");
+        System.out.println("comilla doble: \""+nombre+"\"");
         
     }
 }
